@@ -1,0 +1,603 @@
+у ивентов есть
+"lesson": {
+                          "id": 62704,
+                          "name": "Подготовка к ОГЭ. Числа и вычисления",
+                          "available": true
+                      },
+
+id. Он является ключом для получения ссылки на ответы
+
+с этим id делаешь запрос 
+curl 'https://api-gw.interneturok.ru/api/v2/homeschool/lessons/62704?items=true' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'Authorization: Bearer eyJ0...UWQA' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Device-id: c4a1fcaf0c3287ccc90ae60d5fd591c4' \
+  -H 'Origin: https://interneturok.ru' \
+  -H 'Pragma: no-cache' \
+  -H 'Referer: https://interneturok.ru/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"'
+
+получаешь подобный ответ
+
+{
+    "status": "200_OK",
+    "data": {
+        "homeschool": {
+            "code": 200,
+            "response": {
+                "id": 62704,
+                "name": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u041e\u0413\u042d. \u0427\u0438\u0441\u043b\u0430 \u0438 \u0432\u044b\u0447\u0438\u0441\u043b\u0435\u043d\u0438\u044f",
+                "passing_score": 50,
+                "overview_lesson": "null",
+                "referent_lesson": "null",
+                "faq": null,
+                "assessment": false,
+                "json_recommendation": "[]",
+                "available": true,
+                "topic_number": 60,
+                "schedule": {
+                    "id": 10479274,
+                    "generic": false,
+                    "user_id": 1328212,
+                    "name": "\u0410\u043b\u0433\u0435\u0431\u0440\u0430, 9 \u043a\u043b\u0430\u0441\u0441, 2024 - 2025 \u0443\u0447\u0435\u0431\u043d\u044b\u0439 \u0433\u043e\u0434",
+                    "subject_id": 208,
+                    "created_at": "2024-09-01T00:09:40.000+03:00",
+                    "updated_at": "2024-09-01T00:09:40.000+03:00",
+                    "plan_expired_at": "2025-05-31T23:59:59.000+03:00",
+                    "plan": "school",
+                    "last_online_subscribe_date": "2024-09-01T00:09:40.000+03:00",
+                    "generic_schedule_id": 10223015,
+                    "start_score": null,
+                    "ege_date": null,
+                    "start_result_id": null,
+                    "plan_subscribed_at": "2024-09-01",
+                    "planterm_id": null,
+                    "generic_last_updated_at": null,
+                    "year_id": 2024,
+                    "ordinal": 14,
+                    "start_test_redirect": null,
+                    "plan_type": "school",
+                    "deleted_at": false,
+                    "externship": true,
+                    "program_id": 66,
+                    "current_shard": "master"
+                },
+                "schedule_item": {
+                    "id": 218100147,
+                    "date": "2025-01-16",
+                    "lesson_id": 62704,
+                    "schedule_id": 10223015,
+                    "availability": {
+                        "status": true
+                    },
+                    "passed": null,
+                    "solo_mode": true,
+                    "results_total_score": 0,
+                    "vote": "nothing",
+                    "order_number": 12,
+                    "video_consults": [],
+                    "week_num": 21,
+                    "human_week_interval": [
+                        "2025-01-13",
+                        "2025-01-18"
+                    ],
+                    "lesson": null
+                },
+                "schedule_id": 10223015,
+                "subject_id": 208,
+                "items": [
+                    {
+                        "id": 303377,
+                        "name": "\u041d\u0430\u0447\u0430\u043b\u043e \u0443\u0440\u043e\u043a\u0430",
+                        "desc": "",
+                        "item_type": "start",
+                        "priority": 0,
+                        "lesson_id": 62704,
+                        "max_score": 4,
+                        "content": "{...}",
+                        "homework_kind": null,
+                        "video_id": null,
+                        "required": true,
+                        "required_hw": false,
+                        "start": null,
+                        "finish": null,
+                        "alternative_start": null,
+                        "alternative_finish": null,
+                        "homework_attributes": null,
+                        "deadline": null,
+                        "formatted_deadline": null,
+                        "time_left_before_deadline": null,
+                        "server_time": "2025-03-09T13:41:37.237+00:00",
+                        "redirected_video": null,
+                        "online": null,
+                        "result": null,
+                        "mark": null,
+                        "has_teacher_score": null,
+                        "visible": true,
+                        "passed": false,
+                        "externship": true,
+                        "file_size_limit": 100,
+                        "last_updater_email": null,
+                        "last_version_created_at": null,
+                        "yaclass": false,
+                        "yaclass_iframe": null,
+                        "yaclass_score": null,
+                        "yaclass_teacher_tokens": null,
+                        "notation": null,
+                        "notation_attachment": null,
+                        "default_repeat_date": "2025-03-10T23:59:59.999+00:00"
+                    },
+                    {
+                        "id": 303378,
+                        "name": "\u041f\u043e\u0437\u0434\u0440\u0430\u0432\u043b\u044f\u0435\u043c, \u0432\u044b \u0437\u0430\u0432\u0435\u0440\u0448\u0438\u043b\u0438 \u0443\u0440\u043e\u043a!",
+                        "desc": "",
+                        "item_type": "results",
+                        "priority": 4,
+                        "lesson_id": 62704,
+                        "max_score": 2,
+                        "content": "{...}",
+                        "homework_kind": null,
+                        "video_id": null,
+                        "required": true,
+                        "required_hw": false,
+                        "start": null,
+                        "finish": null,
+                        "alternative_start": null,
+                        "alternative_finish": null,
+                        "homework_attributes": null,
+                        "deadline": null,
+                        "formatted_deadline": null,
+                        "time_left_before_deadline": null,
+                        "server_time": "2025-03-09T13:41:37.268+00:00",
+                        "redirected_video": null,
+                        "online": null,
+                        "result": null,
+                        "mark": null,
+                        "has_teacher_score": null,
+                        "visible": true,
+                        "passed": false,
+                        "externship": true,
+                        "file_size_limit": 100,
+                        "last_updater_email": null,
+                        "last_version_created_at": null,
+                        "yaclass": false,
+                        "yaclass_iframe": null,
+                        "yaclass_score": null,
+                        "yaclass_teacher_tokens": null,
+                        "notation": null,
+                        "notation_attachment": null,
+                        "default_repeat_date": "2025-03-10T23:59:59.999+00:00"
+                    },
+                    {
+                        "id": 307190,
+                        "name": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u041e\u0413\u042d. \u0427\u0438\u0441\u043b\u0430 \u0438 \u0432\u044b\u0447\u0438\u0441\u043b\u0435\u043d\u0438\u044f",
+                        "desc": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u041e\u0413\u042d. \u0427\u0438\u0441\u043b\u0430 \u0438 \u0432\u044b\u0447\u0438\u0441\u043b\u0435\u043d\u0438\u044f",
+                        "item_type": "video_consult",
+                        "priority": 2,
+                        "lesson_id": 62704,
+                        "max_score": 1,
+                        "content": "{\"id\":35790,\"name\":\"\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u041e\u0413\u042d. \u0427\u0438\u0441\u043b\u0430 \u0438 \u0432\u044b\u0447\u0438\u0441\u043b\u0435\u043d\u0438\u044f\"}",
+                        "homework_kind": null,
+                        "video_id": 35790,
+                        "required": true,
+                        "required_hw": false,
+                        "start": null,
+                        "finish": null,
+                        "alternative_start": null,
+                        "alternative_finish": null,
+                        "homework_attributes": null,
+                        "deadline": null,
+                        "formatted_deadline": null,
+                        "time_left_before_deadline": null,
+                        "server_time": "2025-03-09T13:41:37.298+00:00",
+                        "redirected_video": null,
+                        "online": false,
+                        "result": null,
+                        "mark": null,
+                        "has_teacher_score": null,
+                        "visible": true,
+                        "passed": false,
+                        "externship": true,
+                        "file_size_limit": 100,
+                        "last_updater_email": null,
+                        "last_version_created_at": null,
+                        "yaclass": false,
+                        "yaclass_iframe": null,
+                        "yaclass_score": null,
+                        "yaclass_teacher_tokens": null,
+                        "notation": null,
+                        "notation_attachment": null,
+                        "default_repeat_date": "2025-03-10T23:59:59.999+00:00"
+                    },
+                    {
+                        "id": 307309,
+                        "name": "\u0414\u043e\u043c\u0430\u0448\u043d\u0435\u0435 \u0437\u0430\u0434\u0430\u043d\u0438\u0435 (\u0431\u0430\u0437\u043e\u0432\u044b\u0439 \u0443\u0440\u043e\u0432\u0435\u043d\u044c)",
+                        "desc": "",
+                        "item_type": "homework",
+                        "priority": 5,
+                        "lesson_id": 62704,
+                        "max_score": 1,
+                        "content": "{\"image\":[],\"evo_test_id\":\"22748\"}",
+                        "homework_kind": "homework_base",
+                        "video_id": null,
+                        "required": true,
+                        "required_hw": true,
+                        "start": "2024-09-01T03:00:00.000+03:00",
+                        "finish": "2025-03-17T23:59:59.999+03:00",
+                        "alternative_start": null,
+                        "alternative_finish": null,
+                        "homework_attributes": {
+                            "homework_upload_available": true,
+                            "parsed_content": {
+                                "image": [],
+                                "evo_test_id": "22748"
+                            },
+                            "deadline_date": null
+                        },
+                        "deadline": null,
+                        "formatted_deadline": null,
+                        "time_left_before_deadline": null,
+                        "server_time": "2025-03-09T13:41:37.356+00:00",
+                        "redirected_video": null,
+                        "online": null,
+                        "result": {
+                            "id": 87027114,
+                            "status": "checked",
+                            "homework_kind": "homework_base",
+                            "homework_type": "weekly",
+                            "item_id": 307309,
+                            "monthly_homework_id": null,
+                            "mark": 5,
+                            "repeat_before": null,
+                            "repeat_send_at": null,
+                            "send_at": "2025-02-14T22:16:51.000+03:00",
+                            "repeat_time": null,
+                            "progress": 5,
+                            "teacher_answer": null,
+                            "alternative": false,
+                            "schedule_plan": "school",
+                            "visible": true,
+                            "required_hw": true
+                        },
+                        "mark": null,
+                        "has_teacher_score": null,
+                        "visible": true,
+                        "passed": false,
+                        "externship": true,
+                        "file_size_limit": 100,
+                        "last_updater_email": null,
+                        "last_version_created_at": null,
+                        "yaclass": false,
+                        "yaclass_iframe": null,
+                        "yaclass_score": null,
+                        "yaclass_teacher_tokens": null,
+                        "notation": null,
+                        "notation_attachment": null,
+                        "default_repeat_date": "2025-03-10T23:59:59.999+00:00"
+                    },
+                    {
+                        "id": 307313,
+                        "name": "\u0414\u043e\u043c\u0430\u0448\u043d\u0435\u0435 \u0437\u0430\u0434\u0430\u043d\u0438\u0435 (\u043f\u0440\u043e\u0444\u0438\u043b\u044c\u043d\u044b\u0439 \u0443\u0440\u043e\u0432\u0435\u043d\u044c)",
+                        "desc": "",
+                        "item_type": "homework",
+                        "priority": 6,
+                        "lesson_id": 62704,
+                        "max_score": 2,
+                        "content": "{\"image\":[],\"evo_test_id\":\"22749\"}",
+                        "homework_kind": "homework_profile",
+                        "video_id": null,
+                        "required": true,
+                        "required_hw": true,
+                        "start": "2024-09-01T03:00:00.000+03:00",
+                        "finish": "2025-03-17T23:59:59.999+03:00",
+                        "alternative_start": null,
+                        "alternative_finish": null,
+                        "homework_attributes": {
+                            "homework_upload_available": true,
+                            "parsed_content": {
+                                "image": [],
+                                "evo_test_id": "22749"
+                            },
+                            "deadline_date": null
+                        },
+                        "deadline": null,
+                        "formatted_deadline": null,
+                        "time_left_before_deadline": null,
+                        "server_time": "2025-03-09T13:41:37.431+00:00",
+                        "redirected_video": null,
+                        "online": null,
+                        "result": {
+                            "id": null,
+                            "status": "new_homework",
+                            "homework_kind": "homework_profile",
+                            "homework_type": "weekly",
+                            "item_id": 307313,
+                            "monthly_homework_id": null,
+                            "mark": null,
+                            "repeat_before": null,
+                            "repeat_send_at": null,
+                            "send_at": null,
+                            "repeat_time": null,
+                            "progress": 0,
+                            "teacher_answer": null,
+                            "alternative": false,
+                            "schedule_plan": "school",
+                            "visible": true,
+                            "required_hw": true
+                        },
+                        "mark": null,
+                        "has_teacher_score": null,
+                        "visible": false,
+                        "passed": false,
+                        "externship": true,
+                        "file_size_limit": 100,
+                        "last_updater_email": null,
+                        "last_version_created_at": null,
+                        "yaclass": false,
+                        "yaclass_iframe": null,
+                        "yaclass_score": null,
+                        "yaclass_teacher_tokens": null,
+                        "notation": null,
+                        "notation_attachment": null,
+                        "default_repeat_date": "2025-03-10T23:59:59.999+00:00"
+                    },
+                    {
+                        "id": 324997,
+                        "name": "\u0422\u0435\u0441\u0442 \u0434\u043b\u044f \u0441\u0430\u043c\u043e\u043a\u043e\u043d\u0442\u0440\u043e\u043b\u044f",
+                        "desc": "\u0422\u0435\u0441\u0442 \u0434\u043b\u044f \u0441\u0430\u043c\u043e\u043a\u043e\u043d\u0442\u0440\u043e\u043b\u044f",
+                        "item_type": "trainer_evo",
+                        "priority": 3,
+                        "lesson_id": 62704,
+                        "max_score": 1,
+                        "content": "{\"links\":[],\"embed_code\":\"\",\"evo_test_id\":\"24919\"}",
+                        "homework_kind": null,
+                        "video_id": null,
+                        "required": true,
+                        "required_hw": false,
+                        "start": null,
+                        "finish": null,
+                        "alternative_start": null,
+                        "alternative_finish": null,
+                        "homework_attributes": null,
+                        "deadline": null,
+                        "formatted_deadline": null,
+                        "time_left_before_deadline": null,
+                        "server_time": "2025-03-09T13:41:37.482+00:00",
+                        "redirected_video": null,
+                        "online": null,
+                        "result": null,
+                        "mark": null,
+                        "has_teacher_score": null,
+                        "visible": true,
+                        "passed": false,
+                        "externship": true,
+                        "file_size_limit": 100,
+                        "last_updater_email": null,
+                        "last_version_created_at": null,
+                        "yaclass": false,
+                        "yaclass_iframe": "",
+                        "yaclass_score": null,
+                        "yaclass_teacher_tokens": null,
+                        "notation": null,
+                        "notation_attachment": null,
+                        "default_repeat_date": "2025-03-10T23:59:59.999+00:00"
+                    },
+                    {
+                        "id": 327718,
+                        "name": "\u041f\u0440\u043e\u043c\u0435\u0436\u0443\u0442\u043e\u0447\u043d\u044b\u0439 \u0442\u0435\u0441\u0442",
+                        "desc": "\u041f\u0440\u043e\u043c\u0435\u0436\u0443\u0442\u043e\u0447\u043d\u044b\u0439 \u0442\u0435\u0441\u0442",
+                        "item_type": "training_evo",
+                        "priority": 1,
+                        "lesson_id": 62704,
+                        "max_score": 0,
+                        "content": "{\"evo_test_id\":\"24782\"}",
+                        "homework_kind": null,
+                        "video_id": null,
+                        "required": true,
+                        "required_hw": false,
+                        "start": null,
+                        "finish": null,
+                        "alternative_start": null,
+                        "alternative_finish": null,
+                        "homework_attributes": null,
+                        "deadline": null,
+                        "formatted_deadline": null,
+                        "time_left_before_deadline": null,
+                        "server_time": "2025-03-09T13:41:37.523+00:00",
+                        "redirected_video": null,
+                        "online": null,
+                        "result": null,
+                        "mark": null,
+                        "has_teacher_score": null,
+                        "visible": true,
+                        "passed": false,
+                        "externship": true,
+                        "file_size_limit": 100,
+                        "last_updater_email": null,
+                        "last_version_created_at": null,
+                        "yaclass": false,
+                        "yaclass_iframe": null,
+                        "yaclass_score": null,
+                        "yaclass_teacher_tokens": null,
+                        "notation": null,
+                        "notation_attachment": null,
+                        "default_repeat_date": "2025-03-10T23:59:59.999+00:00"
+                    }
+                ],
+                "archived": false,
+                "demo": false,
+                "single_homework": true,
+                "special_course_data": null,
+                "last_version_created_at": null,
+                "last_updater_email": null,
+                "last_structure_update": {
+                    "user_email": "content_ext6@interneturok.ru",
+                    "updated_at": "15.01.25 13:29"
+                },
+                "topic": {
+                    "id": 27962,
+                    "name": "3 \u0447\u0435\u0442\u0432\u0435\u0440\u0442\u044c (20-29 \u043d\u0435\u0434\u0435\u043b\u0438)",
+                    "subject_id": 208,
+                    "schedule_id": 10223015,
+                    "lessons": []
+                },
+                "subject": {
+                    "id": 208,
+                    "name": "\u0410\u043b\u0433\u0435\u0431\u0440\u0430",
+                    "color": "#fe9023",
+                    "desc": "\u041a\u0443\u0440\u0441 \u0430\u043b\u0433\u0435\u0431\u0440\u044b \u0437\u0430 8 \u043a\u043b\u0430\u0441\u0441. \u042d\u0444\u0444\u0435\u043a\u0442\u0438\u0432\u043d\u044b\u0439 \u043a\u0443\u0440\u0441",
+                    "start_test_id": null,
+                    "video_url": null,
+                    "school": true,
+                    "schools": [],
+                    "school_ids": [],
+                    "grade": 9,
+                    "global_id": 1,
+                    "exam_final": {
+                        "active": false,
+                        "id": 88,
+                        "repeats_allowed": 0
+                    },
+                    "quarter_mark_calc_type": "simple_quarter",
+                    "all_schools_flag": true,
+                    "pass_fail_flag": false,
+                    "quarter1_min_marks": 3,
+                    "quarter2_min_marks": 3,
+                    "quarter3_min_marks": 5,
+                    "quarter4_min_marks": 2,
+                    "archived": false
+                }
+            }
+        }
+    }
+}
+
+из ответа извлекаешь "evo_test_id"
+"homework_attributes": {
+                            "homework_upload_available": true,
+                            "parsed_content": {
+                                "image": [],
+                                "evo_test_id": "22748"
+                            },
+                            "deadline_date": null
+                        },
+
+и делаешь запрос, вставляя этот айди curl 'https://api-gw.interneturok.ru/api/v2/tests/users/current/tests/22748/result' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'Authorization: Bearer e....0yMUWQA' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Device-id: c4a1fcaf0c3287ccc90ae60d5fd591c4' \
+  -H 'Origin: https://interneturok.ru' \
+  -H 'Pragma: no-cache' \
+  -H 'Referer: https://interneturok.ru/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"'
+
+получаешь подобный ответ и извлекаешь из него ответы на ТЕСТ и сами вопросы
+{
+    "status": "200_OK",
+    "data": {
+        "tests": {
+            "code": 200,
+            "response": {
+                "data": {
+                    "test": {
+                        "name": "Алгебра. 9 класс. БАЗА. Неделя 21. Подготовка к ОГЭ. Числа и вычисления. 24/25",
+                        "type": 1,
+                        "isActive": true,
+                        "questions": [
+                            {
+                                "id": 98140,
+                                "type": 3,
+                                "test_question_points": 8,
+                                "test_question_position": 1,
+                                "comment_to_user_answers": "$a^{-n}=\\Large\\frac{1}{a^n}$, $a\u22600$\n\n$2^{-2}+4^{-1}=\\Large\\frac{1}{2^2}+\\Large\\frac{1}{4}=\\Large\\frac{1}{4}+\\Large\\frac{1}{4}=\\Large\\frac{1}{2}=0,5$",
+                                "name": "Вычислите.",
+                                "comment": "**Ответ запишите в виде десятичной дроби.**",
+                                "question": "$2^{-2}+4^{-1}=$ :input[]{id=\"1\" type=\"number\"}",
+                                "images": [],
+                                "answer_type": 1,
+                                "sections": [],
+                                "answers": [
+                                    {
+                                        "id": 344305,
+                                        "is_correct": true,
+                                        "input": {
+                                            "id": 7848,
+                                            "type": 1,
+                                            "position": 1,
+                                            "value": "0,5",
+                                            "comment": null,
+                                            "allowed_delta": 0
+                                        }
+                                    }
+                                ],
+                                "answer_results": [
+                                    {
+                                        "is_correct": true,
+                                        "value": "0,5",
+                                        "answer_id": 344305
+                                    }
+                                ],
+                                "user_question_points": 8,
+                                "is_answered_correctly": true
+                            },
+                            {
+                                "id": 98141,
+                                "type": 3,
+                                "test_question_points": 9,
+                                "test_question_position": 2,
+                                "comment_to_user_answers": "$7,17-5\\Large\\frac{3}{4}=7,17-5,75=1,42$",
+                                "name": "Вычислите.",
+                                "comment": "**Ответ запишите в виде десятичной дроби.**",
+                                "question": "$7,17-5\\Large\\frac{3}{4}=$:input[]{id=\"1\" type=\"number\"}",
+                                "images": [],
+                                "answer_type": 1,
+                                "sections": [],
+                                "answers": [
+                                    {
+                                        "id": 344306,
+                                        "is_correct": true,
+                                        "input": {
+                                            "id": 7849,
+                                            "type": 1,
+                                            "position": 1,
+                                            "value": "1,42",
+                                            "comment": null,
+                                            "allowed_delta": 0
+                                        }
+                                    }
+                                ],
+                                "answer_results": [
+                                    {
+                                        "is_correct": true,
+                                        "value": "1,42",
+                                        "answer_id": 344306
+                                    }
+                                ],
+                                "user_question_points": 9,
+                                "is_answered_correctly": true
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
